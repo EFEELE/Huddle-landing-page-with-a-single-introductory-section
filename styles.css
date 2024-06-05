@@ -1,0 +1,216 @@
+.attribution {
+    font-size: 14px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.attribution a {
+    color: var(--Soft-Magenta);
+    font-weight: 800;
+}
+
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    background-color: var(--Violet);
+    background-image: url(./images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.15rem;
+    color: white;
+    /* align-items: center; */
+}
+footer{
+    position: absolute;
+    bottom: 1rem;
+    left: 2rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 2rem 0rem;
+}
+
+main {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    max-width: 80%;
+    
+}
+
+header {
+    margin: 4rem;
+}
+
+section.bottom {
+    margin: 4rem;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+    text-align: right;
+}
+
+ion-icon.md.hydrated {
+    color: white;
+    width: 20px;
+    height: 20px;
+    margin-left: 2rem;
+    border: 2px solid white;
+    padding: 14px;
+    border-radius: 50%;
+    transition: .3s ease;
+
+}
+
+ion-icon.md.hydrated:hover {
+    color: var(--Soft-Magenta);
+    cursor: pointer;
+    border-color: var(--Soft-Magenta);
+}
+
+.pic {
+    width: 60%;
+}
+
+.pic img {
+    max-width: 90%;
+}
+
+.content {
+    width: 40%;
+}
+
+.content a {
+    background-color: white;
+    padding: 1rem 5rem;
+    border-radius: 2rem;
+    display: block;
+    position: relative;
+    width: fit-content;
+    margin-top: 2rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .3s ease;
+}
+
+.content a:hover {
+    background-color: var(--Soft-Magenta);
+    cursor: pointer;
+    color: white;
+
+}
+
+@media screen and (max-width: 1230px) {
+    h1 {
+        margin-top: .5rem;
+        line-height: 1.2;
+        font-size: 2rem;
+    }
+    main{
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    h1 {
+        margin-bottom: .5rem;
+    }
+
+    body {
+        font-size: 1rem;
+    }
+
+    main {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    footer{
+        position: relative;
+        bottom: 0;
+        left: 0;
+    }
+    body{
+        height: auto;
+        min-height: 100vh;
+    }
+    main {
+        flex-direction: column;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        text-align: center;
+    }
+
+    header {
+        margin: 2rem;
+
+    }
+
+    .pic {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    header img {
+        width: 175px;
+    }
+
+    .content {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 3rem;
+    }
+
+    section.bottom {
+        text-align: center;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    ion-icon.md.hydrated {
+        width: 15px;
+        height: 15px;
+        padding: 10px;
+        border: 1px solid white;
+        margin: 0rem .25rem;
+    }
+
+    .content a {
+        padding: .7rem 5rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}

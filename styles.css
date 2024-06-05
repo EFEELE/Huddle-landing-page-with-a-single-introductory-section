@@ -56,8 +56,8 @@ main {
     margin-top: 1rem;
     margin-bottom: 1rem;
     display: flex;
-    margin-left: 4rem;
-    margin-right: 4rem;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 80%;
     
 }
@@ -131,6 +131,8 @@ ion-icon.md.hydrated:hover {
     }
     main{
         max-width: 100%;
+        margin-left: 4rem;
+    margin-right: 4rem;
     }
 }
 
@@ -212,5 +214,8 @@ ion-icon.md.hydrated:hover {
 @media screen and (max-width: 550px) {
     h1 {
         font-size: 1.5rem;
+    }
+    body{
+        background-image: url(./images/bg-mobile.svg);
     }
 }
